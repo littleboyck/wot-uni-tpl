@@ -6,8 +6,10 @@
 type _LocationUrl =
   "/pages/index/index" |
   "/pages/about/index" |
+  "/pages/album/index" |
   "/pages/ci/index" |
   "/pages/create-uni/index" |
+  "/pages/doc/index" |
   "/pages/feedback/index" |
   "/pages/icon/index" |
   "/pages/pinia/index" |

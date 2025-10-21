@@ -20,6 +20,8 @@ import UniKuRoot from '@uni-ku/root'
 import { UniEchartsResolver } from 'uni-echarts/resolver'
 import { UniEcharts } from 'uni-echarts/vite'
 import Optimization from '@uni-ku/bundle-optimizer'
+import mkcert from 'vite-plugin-mkcert'
+
 // https://vitejs.dev/config/
 export default async () => {
   const UnoCSS = (await import('unocss/vite')).default
@@ -82,6 +84,23 @@ export default async () => {
       // https://github.com/antfu/unocss
       // see unocss.config.ts for config
       UnoCSS(),
+      mkcert(),
     ],
+    // 开发服务器跨域设置：允许任意来源和常见方法
+    server: {
+      https: true,
+      cors: {
+        origin: '*',
+        methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+        allowedHeaders: ['*'],
+        exposedHeaders: ['*'],
+        credentials: false,
+      },
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
+        'Access-Control-Allow-Headers': '*',
+      },
+    },
   })
 }

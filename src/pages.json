@@ -6,7 +6,8 @@
       "name": "home",
       "layout": "tabbar",
       "style": {
-        "navigationBarTitleText": "首页"
+        "navigationBarTitleText": "首页",
+        "navigationStyle": "custom"
       }
     },
     {
@@ -16,6 +17,14 @@
       "layout": "tabbar",
       "style": {
         "navigationBarTitleText": "关于"
+      }
+    },
+    {
+      "path": "pages/album/index",
+      "type": "page",
+      "name": "album",
+      "style": {
+        "navigationBarTitleText": "保存图片至相册"
       }
     },
     {
@@ -32,6 +41,15 @@
       "name": "create-uni",
       "style": {
         "navigationBarTitleText": "CreateUni 脚手架"
+      }
+    },
+    {
+      "path": "pages/doc/index",
+      "type": "page",
+      "name": "doc",
+      "style": {
+        "navigationBarTitleText": "文档预览",
+        "navigationStyle": "custom"
       }
     },
     {

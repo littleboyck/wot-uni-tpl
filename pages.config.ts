@@ -16,6 +16,7 @@ export default defineUniPages({
     navigationBarBackgroundColor: '@navBgColor',
     navigationBarTextStyle: '@navTxtStyle',
     navigationBarTitleText: 'Wot Starter',
+    // navigationStyle: 'custom',
 
     // 页面背景配置
     backgroundColor: '@bgColor',

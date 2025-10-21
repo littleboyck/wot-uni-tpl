@@ -49,7 +49,9 @@
   ],
 
   // Enable file nesting
+  // 启用资源管理器文件嵌套：将相关配置文件折叠到主文件下，保持目录整洁
   "explorer.fileNesting.enabled": true,
+  // 定义嵌套规则：当存在 vite.config.* 时，把 pages、manifest、uno、volar 等配置文件以及所有 .env 文件都折叠到 vite.config.* 节点下
   "explorer.fileNesting.patterns": {
     "vite.config.*": "pages.config.*, manifest.config.*, uno.config.*, volar.config.*, *.env, .env.*, alova.config.*"
   }
